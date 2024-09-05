@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.1s ease-in-out;
+}
+
+html {
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100vh;
+}
+
+a,
+a:active,
+a:visited {
+  color: #666;
+  &:hover {
+    color: #000;
+  }
+}
