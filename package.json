@@ -1,0 +1,16 @@
+{
+  "name": "coderhouse-backend",
+  "version": "1.0.0",
+  "description": "Projeto do Grupo 2 da Turma 63780 - Curso de Back End da Coderhouse",
+  "main": "./src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
