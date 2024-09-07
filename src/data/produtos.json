@@ -1,0 +1,39 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Celular",
+      "preco": 175,
+      "descricao": " IPHONE",
+      "estoque": 20
+    },
+    {
+      "id": 2,
+      "nome": "Produto B",
+      "preco": 30,
+      "descricao": "Este é o Produto B",
+      "estoque": 5
+    },
+    {
+      "id": 3,
+      "nome": "Produto C",
+      "preco": 20,
+      "descricao": "Este é o Produto C",
+      "estoque": 15
+    },
+    {
+      "id": 4,
+      "nome": "Produto D",
+      "preco": 100,
+      "descricao": "Este é o Produto D",
+      "estoque": 3
+    },
+    {
+      "id": 5,
+      "nome": "Produto E",
+      "preco": 60,
+      "descricao": "Este é o Produto E",
+      "estoque": 20
+    }
+  ]
+}
