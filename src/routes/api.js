@@ -29,6 +29,29 @@ router.put("/produtos/:id", (req, res) => {
   const { id } = req.params;
   const { nome, preco, descricao, estoque } = req.body;
 
+
+  // Rota DELETE para deletar um produto pelo ID
+  app.delete('/api/produtos/:pid', (req, res) => {
+    const pid = parseInt(req.params.pid, 10); // Converte o parâmetro para um número inteiro
+    
+    if (isNaN(pid) || pid <= 0 || pid > produtos.length) {
+      // Verifica se o pid é um número válido e está dentro do intervalo
+      return res.status(404).json({ erro: "Posição inválida" });
+    }
+  
+    const produtoRemovido = produtos.splice(pid - 1, 1); // Remove o item e captura o item removido
+    
+    // Verifica se o produto foi realmente removido
+    if (produtoRemovido.length === 0) {
+      return res.status(404).json({ erro: "Produto não encontrado" });
+    }
+  
+    res.json({ removido: produtoRemovido[0]
+    })  
+  })
+
+  
+
   // Obtém a lista de produtos
   let produtos = getProdutos();
 
